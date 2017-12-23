@@ -1,14 +1,3 @@
-/* body {
-    color: black;
-    background: white;
-    font-family: sans-serif;
-    margin-top: 10%;
-    margin-bottom: 10%;
-    margin-left: 10%;
-    margin-right: 10%;
-    font-size: small;
-} */
-
 body {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 14px;
@@ -17,10 +6,58 @@ body {
     background-color: #fff;
 }
 
+.sidenav {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 3px;
+}
+
+.sidenav a {
+    padding: 6px 6px 6px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+}
+
+.sidenav a.logo {
+    padding: 6px 6px 6px 6px;
+}
+
+.sidenav p {
+    padding: 6px 6px 6px 25px;
+    text-decoration: none;
+    font-size: 28px;
+    color: #ffffff;
+    display: block;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
 div.content {
-    width: 800px;
-    margin: 0 auto;
+    /* margin: 0 auto; */
+    /* margin-top: 50px; */
+    /* padding: 10px; */
+    width: 1000px;
     background: rgb(219, 219, 219);
+    margin-left: 250px;
     display: block;
 }
 
@@ -28,8 +65,19 @@ img.face {
     padding: 10px;
     float: right;
     max-height: 15%;
-    max-width: 15%;
+    max-width: 20%;
     border-radius: 15px;
+}
+
+img.paper {
+    padding-top: 0;
+    padding-right: 10px;
+    float: right;
+    height: 90px;
+}
+
+img.download {
+    max-height: 20px;
 }
 
 img.logo_piap {
@@ -50,22 +98,30 @@ img.logo_qmul {
 
 img.ps {
     padding: 10px;
-    max-height: 25%;
-    max-width: 25%;
+    /* max-height: 25%; */
+    width: 29.3%;
     border-radius: 15px;
 }
 
 img.pxs {
-    padding: 10px;
-    max-height: 15%;
-    max-width: 15%;
+    padding: 3px;
+    /* max-height: 15%; */
+    width: 17%;
     border-radius: 15px;
+}
+
+iframe {
+    padding: 10px;
 }
 
 img.pl {
     padding: 10px;
-    max-width: 82%;
+    width: 92%;
     border-radius: 15px;
+}
+
+li.patent {
+    margin-top: 10px;
 }
 
 
@@ -87,6 +143,24 @@ a:active {
 p {
     margin-left: 5%;
     margin-right: 5%;
+    font-size: 18px;
+}
+
+p {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 5%;
+    font-size: 18px;
+}
+
+a {
+    font-size: 18px;
+    text-decoration: none;
+    color: rgb(93, 82, 150);
+}
+
+a:hover {
+    color: #000;
 }
 
 p.centered {
@@ -123,6 +197,7 @@ div.p {
 li {
     margin-left: 2%;
     margin-right: 2%;
+    font-size: 18px;
 }
 
 pre {
@@ -141,42 +216,55 @@ pre {
 
 h1 {
     border-width: thin;
-    background: #CCCCCC;
-    color: black;
-    text-indent: 2%;
-    margin-left: 0%;
-    margin-right: 0%;
-    margin-top: 0%;
-    margin-bottom: 0%;
-    font-size: 36px;
+    background: #ccc;
     border-style: solid none;
-    border-top-width: 3px;
-    border-bottom-width: 3px;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    margin: .67em 0;
+    display: block;
+    font-size: 2.5em;
 }
 
 h2 {
-    background: #CCCCCC;
-    color: black;
-    text-indent: 2%;
-    margin-left: 0%;
-    margin-right: 0%;
-    margin-top: 0%;
-    margin-bottom: 0%;
-    font-size: 120%;
+    background: #eee;
+    font-size: 2.0em;
 }
 
 h3 {
-    margin-left: 2%;
-    margin-right: 2%;
-    font-size: 105%;
+    font-size: 1.5em;
+    margin-left: 0;
 }
 
-h4,
-h5,
-h6 {
-    margin-left: 2%;
-    margin-right: 2%;
-    font-size: 100%;
+.h1,
+.h2,
+h1,
+h2 {
+    text-indent: 3%;
+}
+
+.h1,
+.h2,
+.h3,
+h1,
+h2,
+h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+h1,
+h2,
+h3,
+h4 {
+    font-family: inherit;
+    font-weight: 500;
+    /* text-indent: 3%; */
+    line-height: 1.4;
+    color: inherit;
 }
 
 .panel-title {
@@ -194,7 +282,11 @@ td {
 /* a thin black spacer line */
 
 div.pasp {
-    margin-left: 10%;
+    margin-left: 5%;
+}
+
+.pasp p {
+    margin-left: 5px;
 }
 
 div.line {
@@ -222,13 +314,15 @@ p.quicklinks {
 
 /* set the logo in the top lh corner */
 
-p.logo {
+img.logo {
     position: relative;
     left: 3px;
     top: 3px;
-    margin-top: 0%;
+    margin-top: 3px;
     margin-left: 0%;
     margin-right: 0%;
+    width: 230px;
+    height: auto;
 }
 
 
@@ -286,6 +380,7 @@ p.error {
 /* set the height a little larger than the logo */
 
 div.banner {
-    height: 70px;
-    width: 100%;
+    /* height: 70px;
+    width: 100%; */
+    background: inherit;
 }
