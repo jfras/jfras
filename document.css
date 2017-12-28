@@ -105,6 +105,7 @@ img.ps {
 
 img.pxs {
     padding: 3px;
+    padding-left: 10px;
     /* max-height: 15%; */
     width: 17%;
     border-radius: 15px;
@@ -122,6 +123,12 @@ img.pl {
 
 li.patent {
     margin-top: 15px;
+}
+
+li.resume {
+    margin-top: 15px;
+    padding-left: 1.0em;
+    text-indent: -1.0em;
 }
 
 
@@ -156,7 +163,7 @@ p {
 a {
     font-size: 18px;
     text-decoration: none;
-    color: rgb(93, 82, 150);
+    color: rgb(43, 64, 121);
 }
 
 a:hover {
@@ -235,10 +242,23 @@ h3 {
     margin-left: 0;
 }
 
+h4 {
+    border-width: thin;
+    background: inherit;
+    border-style: solid none;
+    border-top-width: 0px;
+    border-bottom-width: 1px;
+    margin: .67em 0;
+    display: block;
+    font-size: 1.5em;
+}
+
 .h1,
 .h2,
+.h4,
 h1,
-h2 {
+h2,
+h4 {
     text-indent: 3%;
 }
 
