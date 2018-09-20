@@ -1,0 +1,13 @@
+#!/bin/bash
+if [ ! -d "originals" ]; then
+	mkdir originals
+	mv *.{jpeg,JPEG,jpg,JPG,png,PNG} originals
+		for f in $(ls originals);do
+			echo "przetwarzanie $f"
+			convert originals/${f}[150x] $f;
+			done;
+else
+	echo "folder originals exists! aborting"
+fi
+
+
